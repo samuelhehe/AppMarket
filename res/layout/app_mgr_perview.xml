@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/topic_icon_bg" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_content_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_content_bg"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/app_mgr_perview_downloadmgr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/app_themes_category_item"
+                android:background="@drawable/user_center_pwd_bg" />
+
+            <include
+                android:id="@+id/app_mgr_perview_appmgr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/app_themes_category_item" />
+
+            <include
+                android:id="@+id/app_mgr_perview_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/app_themes_category_item"
+                android:background="@drawable/user_center_account_bg" />
+
+            <include
+                android:id="@+id/app_mgr_perview_msgmgr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/app_themes_category_item"
+                android:background="@drawable/user_center_pwd_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

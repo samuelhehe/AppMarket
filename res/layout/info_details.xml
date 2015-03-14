@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/sys_back_title" />
+
+        <TextView
+            android:id="@+id/receive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:text="date"
+            android:textColor="@color/item_action_text" />
+
+        <TextView
+            android:id="@+id/theme_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/receive_date"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="21dp"
+            android:text="内容"
+            android:textColor="@color/list_title_hint_text_color"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:singleLine="false"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

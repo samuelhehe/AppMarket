@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <include
+        android:id="@+id/download_mgr_activity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sys_back_title" />
+
+    <TextView
+        android:id="@+id/downloadmgr_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_title"
+        android:layout_below="@+id/download_mgr_activity_title"
+        android:gravity="left"
+        android:text="@string/runningtask"
+        android:textColor="@color/base_font_yellow"
+        android:textSize="15sp" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/downloadmgr_textview"
+        >
+        <LinearLayout
+            android:id="@+id/download_listview_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

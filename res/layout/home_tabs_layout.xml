@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sys_title_bar" />
+
+    <RadioGroup
+        android:id="@+id/tab_rg_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_rb_1"
+            style="@style/app_title"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1"
+            android:checked="true"
+            android:background="@drawable/hot_app_icon_bg"
+            android:text="@string/home_tabs_layout_tips" />
+        <!-- android:drawableTop="@drawable/essential_icon" -->
+
+        <RadioButton
+            android:id="@+id/tab_rb_2"
+            style="@style/app_title"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/app_icon_bg"
+            android:text="@string/category_app_tab_title" />
+        <!-- android:drawableTop="@drawable/tab_selector_tongxunlu" -->
+        <!-- android:drawableTop="@drawable/app_icon" -->
+
+        <RadioButton
+            android:id="@+id/tab_rb_3"
+            style="@style/app_title"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/game_icon_bg"
+            android:text="@string/category_game_tab_title" />
+        <!-- android:drawableTop="@drawable/title_more_feature_normal" -->
+
+        <RadioButton
+            android:id="@+id/tab_rb_4"
+            style="@style/app_title"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/topic_icon_bg"
+            android:text="@string/home_tabs_layout_topics" />
+    </RadioGroup>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

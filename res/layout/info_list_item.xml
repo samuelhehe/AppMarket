@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/list_item_back" >
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/theme_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/receive_date"
+        android:singleLine="true"
+        android:text="商家阿斯顿发打发打发打发打发的说法都发大水法的"
+        android:textColor="@color/black"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/receive_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="接收时间"
+        android:textColor="@color/item_action_text"
+        android:textSize="12dip" />
+
+    <TextView
+        android:id="@+id/theme_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shop_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="讯息标题啊肯定是发电机房；啦地方；啦；劳动法的打法第三方"
+        android:textColor="@color/list_title_hint_text_color"
+        android:textSize="16dip" />
+
+</RelativeLayout>

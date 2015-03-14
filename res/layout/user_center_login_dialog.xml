@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/dialog_content_bg"
+    android:padding="15dip" >
+
+       <ProgressBar
+        android:id="@+id/refresh_list_footer_progressbar"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_gravity="center_vertical"
+		android:layout_margin="25dp"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading4" />
+
+    <TextView
+        android:id="@+id/user_loging_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="25dp"
+        android:text="登录中..."
+        android:textColor="@color/webapp_white"
+        android:textSize="25sp" />
+
+</LinearLayout>

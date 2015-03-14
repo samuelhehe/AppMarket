@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_mixed_bg"
+    android:orientation="vertical" >
+
+    <com.samuel.downloader.view.BounceScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <TextView
+                android:id="@+id/copyright_ch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="GDS科技   版权所有"
+                android:textColor="@color/webapp_black"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/copyright_2014_gds_inc_all_rights_reserved"
+                android:textColor="#ffbbbbbb"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/app_information"
+                style="@style/B4_Font_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="200dp"
+                android:scaleType="fitXY"
+                android:duplicateParentState="true"
+				android:src="@drawable/sys_welcome_title"                
+                />
+<!--             <TextView -->
+<!--                 android:id="@+id/app_information" -->
+<!--                 style="@style/B4_Font_white" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_centerHorizontal="true" -->
+<!--                 android:layout_alignParentTop="true" -->
+<!--                 android:layout_marginTop="280dp" -->
+<!--                 android:duplicateParentState="true" -->
+<!--                 android:gravity="left" -->
+<!--                 android:paddingLeft="70dp" -->
+<!--                 android:text="追求卓越 " -->
+<!--                 android:textStyle="italic" -->
+<!--                 android:textColor="@color/ems_green" -->
+<!--                 android:textSize="28sp" /> -->
+            
+<!--             <TextView -->
+<!--                 android:id="@+id/app_information2" -->
+<!--                 style="@style/B4_Font_white" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_centerHorizontal="true" -->
+<!--                 android:layout_below="@+id/app_information" -->
+<!--                 android:layout_marginTop="10dp" -->
+<!--                 android:duplicateParentState="true" -->
+<!--                 android:gravity="center_horizontal" -->
+<!--                 android:text="做最好的应用市场 !" -->
+<!--                 android:textStyle="italic" -->
+<!--                 android:textColor="@color/ems_green" -->
+<!--                 android:textSize="28sp" /> -->
+
+            <TextView
+                android:id="@+id/subVersion"
+                style="@style/D6_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/brand"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:includeFontPadding="false"
+                android:text="@string/app_name"
+                android:textColor="@color/webapp_black"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/subVersion2"
+                style="@style/D6_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subVersion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:layout_alignLeft="@+id/subVersion"
+                android:text="Ver 1.0.301"
+                android:textColor="@color/webapp_black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/brand"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_above="@+id/copyright_ch"
+                android:layout_marginBottom="48dp"
+                android:layout_marginRight="36dp"
+                android:layout_toLeftOf="@+id/subVersion"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_launcher" />
+
+        </RelativeLayout>
+    </com.samuel.downloader.view.BounceScrollView>
+
+</LinearLayout>

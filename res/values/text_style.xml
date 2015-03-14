@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="B1_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="B2_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="B3_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="B4_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray</item>
+    </style>
+
+    <style name="B4_Font_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray_item</item>
+    </style>
+
+    <style name="B5_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="B6_Font">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="B7_Font">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/skin_black</item>
+    </style>
+
+    <style name="C3_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="C4_Font">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="C4_Font_white">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/skin_gray3_item</item>
+    </style>
+
+    <style name="C5_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="C6_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="C7_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="C8_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_blue</item>
+    </style>
+
+    <style name="C8_Font_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_blue_item</item>
+    </style>
+
+    <style name="C9_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="C9_Font_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="C10_Font_white">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="TextGrayS4_white" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/textSizeS4</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="D1_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="D2_Font">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="D3_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="D3_Font_white">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="MENU_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_menu</item>
+    </style>
+
+    <style name="D4_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray3_item</item>
+    </style>
+
+    <style name="D5_Font">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="D6_Font">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="D8_Font">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="E1_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray</item>
+    </style>
+
+    <style name="E2_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray</item>
+    </style>
+
+    <style name="G1_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="K1_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff3b639f</item>
+    </style>
+
+    <style name="K2_Font_white">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray3_item</item>
+    </style>
+
+    <style name="P3_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="Q4_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_blue</item>
+    </style>
+
+    <style name="R1_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffb7b7b7</item>
+    </style>
+
+    <style name="S2_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="T4_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="login_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff777777</item>
+    </style>
+
+    <style name="Btn_WithBuleBg_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Btn_WithWhiteBg_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/sc_gray</item>
+    </style>
+
+    <style name="accuse_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_blue</item>
+    </style>
+
+    <style name="sys_msg_type_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_gray2</item>
+    </style>
+
+    <style name="sys_msg_time_Font">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/skin_gray3</item>
+    </style>
+
+    <style name="sys_msg_nickname_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/skin_dark_gray_item</item>
+    </style>
+
+    <style name="sys_msg_message_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray_item</item>
+    </style>
+
+    <style name="sys_msg_source_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/skin_gray3_item</item>
+    </style>
+
+    <style name="sys_msg_result_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="sys_msg_baseInfo_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_gray2_item</item>
+    </style>
+
+    <style name="sys_msg_baseInfoContent_Font">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/skin_dark_gray_item</item>
+    </style>
+
+</resources>

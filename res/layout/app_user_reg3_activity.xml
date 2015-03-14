@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sys_back_title" />
+
+    <RelativeLayout
+        android:id="@+id/app_user_reg_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="185dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/app_user_reg_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/app_user_reg_result_icon"
+            android:text="@string/app_user_reg_result_success_hint"
+            android:textColor="@color/ems_green" />
+
+        <ImageView
+            android:id="@+id/app_user_reg_result_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_reg_success_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/app_user_register_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_green_enhance"
+        android:padding="13.0dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="登录"
+        android:textColor="@color/ems_white" />
+
+</LinearLayout>

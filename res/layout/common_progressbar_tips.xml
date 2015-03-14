@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="100dp"
+    android:background="@drawable/sys_app_loading"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:id="@+id/refresh_list_footer_progressbar"
+        android:layout_width="49dip"
+        android:layout_height="14dip"
+        android:indeterminate="true"
+        android:layout_centerVertical="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading_tips" />
+
+    <TextView
+        android:layout_toRightOf="@+id/refresh_list_footer_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/ems_white"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:text="努力加载中..." />
+
+</RelativeLayout>

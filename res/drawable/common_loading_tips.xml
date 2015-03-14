@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/tips_loading1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading3"
+        android:duration="200"/>
+    
+    <item
+        android:drawable="@drawable/tips_loading4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading7"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading8"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading9"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading10"
+        android:duration="200"/>
+    
+    <item
+        android:drawable="@drawable/tips_loading11"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading12"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading13"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading14"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading15"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading16"
+        android:duration="200"/>
+    
+    
+    <item
+        android:drawable="@drawable/tips_loading17"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading18"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading19"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/tips_loading20"
+        android:duration="200"/>
+
+    
+
+</animation-list>

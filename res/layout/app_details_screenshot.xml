@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/B4_Font"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sys_base_bg"
+    android:padding="10dp" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:background="@color/ems_bar_bg_color"
+		android:layout_gravity="start"        
+        android:scrollbars="horizontal" >
+
+        <com.samuel.downloader.view.ScreenShotLayout
+            android:id="@+id/movieLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sys_no_network_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sys_no_network_warning"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/sys_no_network_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/not_network"
+        android:visibility="visible" />
+
+</LinearLayout>

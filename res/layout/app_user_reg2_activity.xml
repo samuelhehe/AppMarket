@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sys_back_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="15.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_center_account_bg" >
+
+                <TextView
+                    android:id="@+id/textview_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edittext_tel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textview_tel"
+                    android:background="@null"
+                    android:inputType="textPhonetic"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/user_center_pwd_icon"
+                    android:drawablePadding="10.0dip"
+                    android:hint="@string/app_user_reg2_tel_hint"
+                    android:paddingBottom="12.0dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="30.0dip"
+                    android:paddingTop="12.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/button_account_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/edittext_tel"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="4.0dip"
+                    android:src="@drawable/button_clear"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/app_user_reg2_phoneno_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_center_phoneno_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edittext_phone_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/phone_no"
+                    android:inputType="phone"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/user_center_pwd_icon"
+                    android:drawablePadding="10.0dip"
+                    android:hint="@string/sys_content_phone_edittext_hint"
+                    android:paddingBottom="12.0dip"
+                    android:paddingLeft="3dip"
+                    android:paddingRight="30.0dip"
+                    android:paddingTop="12.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/button_account_clear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/edittext_phone_no"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="4.0dip"
+                    android:src="@drawable/button_clear"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_center_pwd_bg"
+                android:paddingLeft="5.0dip" >
+
+                <TextView
+                    android:id="@+id/pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/personnal_user_login_pwd_pre"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edittext_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/pwd"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/user_center_pwd_icon"
+                    android:drawablePadding="10.0dip"
+                    android:hint="@string/sys_common_email_edittext_hint"
+                    android:paddingBottom="12.0dip"
+                    android:paddingRight="30.0dip"
+                    android:paddingTop="12.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/button_pwd_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/edittext_email"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/button_clear"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/verification_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/user_center_etidttext_bg"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personnal_user_login_verification_code"
+                    android:textColor="#ff9a9a9a" />
+
+                <EditText
+                    android:id="@+id/edittext_verfication_code"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/personnal_user_login_verification_hint"
+                    android:inputType="textVisiblePassword"
+                    android:paddingBottom="12.0dip"
+                    android:paddingTop="12.0dip"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/imageview_verfication_code"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dip"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip" >
+
+                <Button
+                    android:id="@+id/reg_next"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_green_enhance"
+                    android:padding="13.0dip"
+                    android:text="@string/sys_common_reg"
+                    android:textColor="@color/ems_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/user_login_bottom_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip"
+                android:background="@drawable/user_login_text_view_bg"
+                android:gravity="center"
+                android:paddingLeft="25.0dip"
+                android:paddingRight="25.0dip"
+                android:text="@string/user_info_activity_broswer"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_login_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/user_login_task" />
+
+                <Button
+                    android:id="@+id/user_login_privilege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@drawable/user_login_privilege" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

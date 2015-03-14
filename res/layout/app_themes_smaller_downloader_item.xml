@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/sys_item_base"
+    android:gravity="end" >
+
+    <ImageView
+        android:id="@+id/unfold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/lefticon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_icon_tbd" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/toptxt"
+                style="@style/notification_main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:hint="name"
+                android:paddingRight="10.0dip"
+                android:singleLine="true"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/bottomtxt"
+                style="@style/notification_sub_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="neirong"
+                android:maxWidth="300dp"
+                android:paddingRight="10.0dip"
+                android:singleLine="true"
+                android:textColor="@color/webapp_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/launchapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="40.0dip"
+            android:background="@drawable/button_white"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/sys_common_launch_hint"
+            android:textColor="@color/webapp_black"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/button_white"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/smaller_download_download"
+            android:textColor="@color/webapp_black"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

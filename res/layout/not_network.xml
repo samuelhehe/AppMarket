@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/retry"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/main_content_bg_bottom" >
+
+    <LinearLayout
+        android:id="@+id/retry"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70.0dip"
+            android:background="@drawable/notwork_be_illogical" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:text="@string/RetryMessge"
+            android:textColor="#ff5a5a5a"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/not_network_retry_tv"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/button_white"
+            android:gravity="center"
+            android:paddingBottom="15.0dip"
+            android:paddingTop="10.0dip"
+            android:text="@string/click_ref"
+            android:textColor="#ff5a5a5a"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/error_share_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/error_page_share_bg"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/error_page_share_light" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/error_share_tips"
+            android:textColor="#ff674200" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10.0dip"
+            android:src="@drawable/error_page_share_arrow" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/list_item_back" >
+
+    <RelativeLayout
+        android:id="@+id/item_body"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/dlmgr_iv" >
+
+            <TextView
+                android:id="@+id/appname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:hint="@string/item_appname"
+                android:text="@string/kugou"
+                android:textColor="#ff545454"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/current_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appname_tv"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/dl_current_status"
+                android:textColor="#ff545454"
+                android:textSize="14.0dip"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/download_process"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/splitor"
+                android:background="@drawable/button_cancel"
+                android:focusable="false"
+                android:gravity="center" />
+
+            <View
+                android:id="@+id/splitor"
+                android:layout_width="2dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/wash_divider" />
+
+            <TextView
+                android:id="@+id/resume_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_install"
+                android:focusable="false"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pause_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_pause"
+                android:focusable="false"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/download_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/install_retry_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/button_white"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="@string/sys_common_download_install"
+                android:textColor="@color/webapp_black"
+                android:textSize="13.0dip" />
+
+            <ImageView
+                android:id="@+id/download_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/download_desc"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/app_download_complete" />
+
+            <TextView
+                android:id="@+id/download_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/install_retry_tv"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/sys_common_download_success"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dlmgr_iv"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/app_icon_tbd" />
+    </RelativeLayout>
+
+</RelativeLayout>

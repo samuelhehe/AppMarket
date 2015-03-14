@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="login_dialog" parent="@android:style/Theme.Dialog">
+	<item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无 -->
+	<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上 -->
+	<item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+	<item name="android:windowNoTitle">true</item><!-- 无title -->
+	<item name="android:windowBackground">@drawable/dialog_bg</item><!--背景图片 -->
+	<item name="android:backgroundDimEnabled">false</item><!--模糊-->
+</style>
+</resources>

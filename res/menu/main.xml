@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <item -->
+<!--         android:id="@+id/refresh" -->
+<!--         android:orderInCategory="100" -->
+<!--         android:showAsAction="ifRoom" -->
+        
+<!--         android:title="@string/sys_refresh"/> -->
+    <item
+        android:id="@+id/user_center"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sys_user_center"/>
+    <item
+        android:id="@+id/check_update"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sys_check_update"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/sys_about"/>
+    <item
+        android:id="@+id/sys_app_search"
+        android:icon="@drawable/home_search_bar"
+        android:title="@string/app_search"
+        android:showAsAction="ifRoom"/>
+
+</menu>

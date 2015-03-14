@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sys_back_title" />
+
+    <TextView
+        android:id="@+id/app_details_tv_permission_ref"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_title"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:text="@string/app_details_permission_ref_hint"
+        android:textColor="@color/base_font_yellow"
+        android:textSize="18sp" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/app_details_permission_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

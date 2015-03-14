@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_content_bg_middle_n"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/delete_movie"
+        android:layout_marginLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/movie_headimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/app_icon_tbd" />
+
+        <TextView
+            android:id="@+id/movie_name_item"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/movie_headimage"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/movie_headimage"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="桃花侠大战菊花怪"
+            android:textColor="@color/ems_blue"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/download_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_alignBottom="@+id/movie_headimage"
+            android:layout_alignRight="@+id/totalsize"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/movie_headimage" />
+
+        <CheckBox
+            android:id="@+id/movie_headiamge_checkbox"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignLeft="@+id/movie_headimage"
+            android:layout_alignTop="@+id/movie_headimage"
+            android:layout_marginLeft="0.5dp"
+            android:button="@drawable/search_bar_btn"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/movie_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/movie_name_item"
+            android:layout_below="@+id/movie_name_item"
+            android:layout_marginTop="2dp"
+            android:text="0.00M"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#23b5bc"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/current_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/download_progressBar"
+            android:layout_alignRight="@+id/stop_download_bt"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="等待中"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#23b5bc"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/totalsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/movie_file_size"
+            android:layout_alignBottom="@+id/movie_file_size"
+            android:layout_alignRight="@+id/movie_name_item"
+            android:text="0.00M"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#23b5bc"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/stop_download_bt"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_start"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delete_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_cancel" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/divider_line"
+        android:paddingBottom="2dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

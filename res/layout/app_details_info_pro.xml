@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/B4_Font"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sys_base_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/app_ratings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_white"
+            android:text="@string/app_details_rating"
+            android:textColor="@color/webapp_black" />
+
+        <Button
+            android:id="@+id/app_permission_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_white"
+            android:text="@string/app_details_permission"
+            android:textColor="@color/webapp_black" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/app_details_infos"
+        style="@style/B4_Font"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp" >
+
+        <!-- <TableRow -->
+        <!-- android:id="@+id/app_details_infos_category" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dip" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/app_details_infos_tv_category" -->
+        <!-- android:text="@string/app_details_category" -->
+        <!-- android:textColor="@color/webapp_black" -->
+        <!-- android:textSize="20sp" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/app_details_infos_tv_category_content" -->
+        <!-- android:paddingLeft="2dp" -->
+        <!-- android:text="@string/app_details_category_hint" -->
+        <!-- android:textColor="@color/webapp_black" -->
+        <!-- android:textSize="20sp" /> -->
+        <!-- </TableRow> -->
+
+        <TableRow
+            android:id="@+id/app_details_infos_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_version"
+                android:text="@string/app_details_verion"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_version_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_verion_hint"
+                android:textColor="@color/webapp_black"
+              />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/app_details_infos_downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_downloads"
+                android:text="@string/app_details_downloads"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_downloads_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_downloads_hint"
+                android:textColor="@color/webapp_black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/app_details_infos_entitysize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_entitysize"
+                android:text="@string/app_details_entitysize"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_entitysize_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_entitysize_hint"
+                android:textColor="@color/webapp_black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/app_details_infos_updatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_updatetime"
+                android:text="@string/app_details_updatetime"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_updatetime_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_updatetime_hint"
+                android:textColor="@color/webapp_black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/app_details_infos_sysminversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_sysminversion"
+                android:text="@string/app_details_sysminverion"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_sysminversion_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_sysminverion_hint"
+                android:textColor="@color/webapp_black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/app_details_infos_devolper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_devolper"
+                android:text="@string/app_details_devloper"
+                android:textColor="@color/webapp_black" />
+
+            <TextView
+                android:id="@+id/app_details_infos_tv_devolper_content"
+                android:paddingLeft="2dp"
+                android:text="@string/app_details_devloper_hint"
+                android:textColor="@color/webapp_black" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

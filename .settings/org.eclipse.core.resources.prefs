@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/samuel/downloader/infocenter/app/ShopList.java=UTF-8
+encoding//src/com/samuel/downloader/tools/AsyncLoadImage.java=UTF-8
+encoding//src/com/samuel/downloader/tools/BitmapCompressTools.java=UTF-8
+encoding//src/com/samuel/downloader/tools/CrashApplication.java=utf-8
+encoding//src/com/samuel/downloader/tools/CrashHandler.java=UTF-8
+encoding//src/com/samuel/downloader/utils/UpdateAPK.java=UTF-8
+encoding//src/com/samuel/downloader/view/XListView.java=UTF-8
+encoding//src/com/samuel/downloader/view/XListViewFooter.java=UTF-8
+encoding//src/com/samuel/downloader/view/XListViewHeader.java=UTF-8
+encoding/<project>=UTF-8

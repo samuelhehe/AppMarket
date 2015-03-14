@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_progressbar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone" >
+
+    <ProgressBar
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_gravity="bottom|center"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading" />
+
+</FrameLayout>

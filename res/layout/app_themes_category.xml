@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_content_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/game_icon_bg" />
+
+    <LinearLayout
+        android:id="@+id/loading_error_retry_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_content_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <include
+            android:id="@+id/loading_pb"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            layout="@layout/common_progressbar_tips"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/sys_retry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/not_network"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.samuel.downloader.view.XListView
+        android:id="@+id/app_themes_category_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"    android:visibility="gone"
+        android:cacheColorHint="#00000000" >
+    </com.samuel.downloader.view.XListView>
+
+<!--     <ListView -->
+<!--         android:id="@+id/app_themes_category_lv" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:visibility="gone" > -->
+<!--     </ListView> -->
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyAppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/MyActionBar.MenuTextStyle</item>
+    </style>
+
+    <style name="MyActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/webapp_black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">#F0F</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="webapp_fillall">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="sys_progressbar_Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="webapp_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="diandian">
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="webapp_fillx">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="webapp_filly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:editTextStyle">@style/Widget.Styled.EditText</item>
+    </style>
+
+    <style name="Widget.Styled.EditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="app_title" parent="webapp_filly">
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:paddingTop">5dip</item> -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="ThemeActivity" mce_bogus="1">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="myDialogTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="notification_main_text">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="notification_sub_text">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="webapp_btn_dialog" parent="@style/webapp_wrap">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/webapp_black</item>
+        <item name="android:minHeight">45.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_progress_bar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/webview_loading_bg</item>
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:indeterminateDrawable">@drawable/webview_loading_icon</item>
+    </style>
+
+    <style name="progressbar_text">
+        <item name="android:textSize">17.0dip</item>
+        <item name="android:textColor">#ff777777</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:text">@string/Downloading</item>
+    </style>
+
+    <style name="pullUpAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_2_enter_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_2_enter_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/activity_2_enter_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_2_enter_out</item>
+    </style>
+
+    <style name="actAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_new</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_back</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_finish</item>
+        <item name="android:taskOpenEnterAnimation">@anim/activity_new</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/activity_back</item>
+        <item name="android:taskCloseExitAnimation">@anim/activity_finish</item>
+    </style>
+
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/sc_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/sc_popup_exit</item>
+    </style>
+
+    <style name="tab_rb_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <!-- <item name="android:textColor" >@color/tab_selector_tv_color</item> -->
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <!-- <item name="android:background" >@drawable/tab_selector_checked_bg</item> -->
+    </style>
+
+</resources>

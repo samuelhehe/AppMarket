@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/list_item_back" >
+
+    <RelativeLayout
+        android:id="@+id/item_body"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/lefticon" >
+
+            <TextView
+                android:id="@+id/toptxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/app_manage"
+                android:singleLine="false"
+                android:textColor="#ff545454"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/bottomtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toptxt"
+                android:layout_marginLeft="10.0dip"
+                android:text="adsfadsfad"
+                android:textColor="#ff545454"
+                android:textSize="13.0dip"
+                android:visibility="visible" />
+
+       
+
+            <TextView
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_green_enhance"
+                android:focusable="false"
+                android:gravity="center"
+				android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+				android:paddingLeft="20dp"
+				android:paddingRight="20dp"
+                android:text="@string/smaller_download_download"
+                android:textColor="@color/ems_white"
+                android:textSize="14.0dip"
+                 />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/lefticon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/app_icon_tbd" />
+    </RelativeLayout>
+
+</RelativeLayout>

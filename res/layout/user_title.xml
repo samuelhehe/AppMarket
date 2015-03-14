@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_height_no_tab"
+    android:background="@drawable/sys_item_base"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip" >
+
+
+
+    <LinearLayout
+        android:id="@+id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="8.0dip" >
+
+        <ImageView
+            android:id="@+id/titleSearch"
+            android:layout_width="38.0dip"
+            android:layout_height="38.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4.0dip"
+            android:clickable="true"
+            android:src="@drawable/title_search_button"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/driver"
+            android:layout_width="3.0px"
+            android:layout_height="35.0dip"
+            android:layout_gravity="center"
+            android:src="@drawable/app_title_icon_driver"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/titlemoreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/titleMoreFeature"
+                android:layout_width="38.0dip"
+                android:layout_height="38.0dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@drawable/title_more_feature" />
+
+            <ImageView
+                android:id="@+id/diandian"
+                style="@style/diandian"
+                android:layout_width="@dimen/title_right_diandian_height"
+                android:layout_height="@dimen/title_right_diandian_height"
+                android:layout_alignRight="@+id/titleMoreFeature"
+                android:layout_alignTop="@+id/titleMoreFeature"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:src="@drawable/prompt" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/custom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_right_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:textColor="#ff4c4c4c"
+            android:textSize="13.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/title_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/title_shadow"
+        android:visibility="gone" />
+
+</RelativeLayout>
