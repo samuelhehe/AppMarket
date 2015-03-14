@@ -20,5 +20,5 @@
 <br/>在使用中有任何问题，欢迎能及时反馈给我，可以用以下联系方式跟我交流,我们共同学习进步
 <br/>邮件：<mailto:samuelwang95@gmail.com>
 <br/>QQ： 820215725
-<br/>网站：<a href="www.samuelnotes.cn">www.samuelnotes.cn</a>
+<br/>网站：<a href="http://www.samuelnotes.cn" >www.samuelnotes.cn</a>
 <br/>
