@@ -6,7 +6,7 @@
 <br/>3.xmpp 推送
 <br/>4.各种组件的灵活运用
 <br/><b>引用的开源框架：</b>
-<br/>1.<a href="https://github.com/huberflores/XMPPNotificationClient">xmpp</a>
+<br/>1.<a href="https://github.com/samuelhehe/androidpn_enhanced_client">xmpp androidpn_enhanced_client</a>
 <br/>2.<a href="https://github.com/yangfuhai/afinal">afinal</a> 
 <br/>3.<a href="https://github.com/JakeWharton/ViewPagerIndicator">ViewPagerIndicator</a>
 <br/>
@@ -14,7 +14,7 @@
 <br/>![appmarkettest.gif](https://raw.github.com/samuelhehe/AppMarket/master/screenshots/appmarkettest.gif "appmarkettest.gif")
 <br/>
 <br/><b>使用</b>
-<br/>算是个人学习的项目记录吧，如果使用里边的各种操作方式可以直接用到，那就使用呗。
+<br/>算是个人学习的项目记录吧，如果使用里边的各种操作方式可以直接用到，那就使用呗,不用客气。
 <br/>由于项目中引用了开源框架，使用中请注明原作者。
 <br/><b>反馈</b>
 <br/>在使用中有任何问题，欢迎能及时反馈给我，可以用以下联系方式跟我交流,我们共同学习进步
